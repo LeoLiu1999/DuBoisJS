@@ -1,1 +1,1 @@
-# DeBoisJS
+# DuBoisJS
