@@ -42,3 +42,22 @@ console.log("Testing randomStudent...");
 console.log(randomStudent());
 console.log(randomStudent());
 console.log(randomStudent());
+
+
+var buttonCallback = function(e){
+    console.log("\n\nhere cones e...");
+    console.log(e(5));
+    console.log("\n\nhere comes 'this'...");
+    console.log(this);
+}
+var b = document.getElementById('b');
+b.addEventListener("click", buttonCallback);
+
+var fib = document.getElementById('fib');
+fib.addEventListener("click", fibonacci(5));
+
+var gcd = document.getElementById('gcd');
+gcd.addEventListener("click", buttonCallback);
+
+var randStu = document.getElementById('randStu');
+randStu.addEventListener("click", buttonCallback);
